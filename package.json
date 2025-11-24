@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "fast-csv": "^5.0.5",
+    "pdfkit": "^0.17.2",
+    "qrcode": "^1.5.4",
+    "resend": "^6.4.0"
+  },
+  "devDependencies": {
+    "@types/pdfkit": "^0.17.3"
+  }
+}

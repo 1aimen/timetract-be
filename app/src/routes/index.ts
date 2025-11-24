@@ -73,13 +73,13 @@ import {
   updateClockRulesController,
   validateQRCodeController,
 } from "../modules/clock/clock.controller";
-import {
-  generateOrganizationReportController,
-  generatePersonalReportController,
-  generateProjectReportController,
-  generateShiftReportController,
-  scheduleReportController,
-} from "../modules/reports/reports.controller";
+// import {
+//   generateOrganizationReportController,
+//   generatePersonalReportController,
+//   generateProjectReportController,
+//   generateShiftReportController,
+//   scheduleReportController,
+// } from "../modules/reports/reports.controller";
 import {
   assignUsersToTask,
   createTasks,
@@ -496,37 +496,37 @@ router.post(
 // geolocation
 // reports
 
-router.get(
-  "/api/v1/reports/personal/:userId",
-  authMiddleware,
-  generatePersonalReportController
-);
+// router.get(
+//   "/api/v1/reports/personal/:userId",
+//   authMiddleware,
+//   generatePersonalReportController
+// );
 
-router.get(
-  "/api/v1/reports/shift/:shiftId",
-  authMiddleware,
-  generateShiftReportController
-);
+// router.get(
+//   "/api/v1/reports/shift/:shiftId",
+//   authMiddleware,
+//   generateShiftReportController
+// );
 
-router.get(
-  "/api/v1/reports/project/:projectId",
-  authorize("ADMIN", "MANAGER"),
-  authMiddleware,
-  generateProjectReportController
-);
+// router.get(
+//   "/api/v1/reports/project/:projectId",
+//   authorize("ADMIN", "MANAGER"),
+//   authMiddleware,
+//   generateProjectReportController
+// );
 
-router.get(
-  "/api/v1/reports/organization/:orgId",
-  authMiddleware,
-  authorize("ADMIN"),
-  generateOrganizationReportController
-);
+// router.get(
+//   "/api/v1/reports/organization/:orgId",
+//   authMiddleware,
+//   authorize("ADMIN"),
+//   generateOrganizationReportController
+// );
 
-router.post(
-  "/api/v1/reports/schedule",
-  authMiddleware,
-  scheduleReportController
-);
+// router.post(
+//   "/api/v1/reports/schedule",
+//   authMiddleware,
+//   scheduleReportController
+// );
 
 // notifications
 // dashboard

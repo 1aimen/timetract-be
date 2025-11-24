@@ -4,7 +4,8 @@ export const config = {
   jwt_secret: process.env.JWT_SECRET || "so-secret",
   jwt_refresh_secret: process.env.JWT_REFRESH_SECRET || "so-secret",
   qr_code_secret: process.env.QRCODE_SECRET || "so-secret",
-  resend_api_key: process.env.RESEND_API_KEY || "",
+  resend_api_key:
+    process.env.RESEND_API_KEY || "re_aqGE2uqV_2ba9BvGqBhjoRbibr539RvxG",
   public_app_url: process.env.PUBLIC_APP_URL || "https://www.timetract.com/",
   internal_app_url: process.env.INTERNAL_APP_URL || "localhost:3000/",
 };
